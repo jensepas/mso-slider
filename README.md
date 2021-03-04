@@ -11,8 +11,7 @@ Version: 1.0.0
 
 This project is licensed under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html), version 3.
 
-2009&thinsp;&ndash;&thinsp;2021 &copy; [ms-only](https://www.ms-only.fr).
+2021 &copy; [ms-only](https://www.ms-only.fr).
 
-## Services
 
 

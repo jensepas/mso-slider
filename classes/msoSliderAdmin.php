@@ -193,12 +193,17 @@ if (!class_exists('msoSliderAdmin')) {
          */
         public function mso_slider_column($column)
         {
-            global $post;
+            global $post, $wpdb;
             if ($column === 'thumbnail') {
                 echo edit_post_link(get_the_post_thumbnail($post->ID, 'thumbnail'));
+
             }
             if ($column === '_mso_slider') {
-                echo get_post_meta($post->ID, '_mso_slider', true);
+                $post_name = get_post_meta($post->ID, '_mso_slider', true);
+                $post = $wpdb->get_var($wpdb->prepare( "SELECT post_title FROM $wpdb->posts WHERE post_name= %s", $post_name));
+                if ($post) {
+                    echo get_post($post)->post_title;
+                }
             }
             if ($column === '_mso_nb_slider') {
                 $post_slug = get_post_field('post_name', $post->ID);

@@ -100,7 +100,7 @@ if (!class_exists('msoSlider')) {
                             responsive: true,
                             showmarkers: false,
                             showcontrols: true,
-                            centermarkers: false,
+                            //centermarkers: false,
                             animduration: 450, // how fast the animation are
                             animspeed: 4000 // the delay between each slide
                         });

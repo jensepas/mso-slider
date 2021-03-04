@@ -215,7 +215,7 @@ if (!class_exists('msoSliderAdmin')) {
                     ),
                 );
                 $query = new WP_Query($args);
-                echo get_the_title($post->ID) . ' (' . $query->found_posts . ')';
+                echo $query->found_posts;
             }
             if ($column === '_mso_slider_shortcode') {
                 $post_slug = get_post_field('post_name', $post->ID);

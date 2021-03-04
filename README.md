@@ -1,4 +1,4 @@
-#mso-slider
+# mso-slider
 
 A simple slider system for WordPress using basic-jquery-slider : https://github.com/jcobb/basic-jquery-slider
 

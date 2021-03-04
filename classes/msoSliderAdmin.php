@@ -196,6 +196,7 @@ if (!class_exists('msoSliderAdmin')) {
             global $post, $wpdb;
             if ($column === 'thumbnail') {
                 echo edit_post_link(get_the_post_thumbnail($post->ID, 'thumbnail'));
+
             }
             if ($column === '_mso_slider') {
                 $post_name = get_post_meta($post->ID, '_mso_slider', true);

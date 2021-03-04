@@ -1,6 +1,18 @@
-# mso-slider
-  Plugin Name: mso slider
-  Description: Plugin fournissant un slider
-  Author: ms-only
-  Version: 1.0.0
-  Author URI: https://www.ms-only.fr/
+#mso-slider
+
+A simple slider system for WordPress using basic-jquery-slider : https://github.com/jcobb/basic-jquery-slider
+
+Version: 1.0.0
+
+
+## Plugin Features
+
+## Copyright and License <img src="https://www.gnu.org/graphics/gplv3-with-text-84x42.png" />
+
+This project is licensed under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html), version 3.
+
+2009&thinsp;&ndash;&thinsp;2021 &copy; [ms-only](https://www.ms-only.fr).
+
+## Services
+
+

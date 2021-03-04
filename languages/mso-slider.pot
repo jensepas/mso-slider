@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-03 12:56+0100\n"
+"PO-Revision-Date: 2021-03-03 12:56+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: classes/msoSlider.php:23
+msgid "All Slides"
+msgstr ""
+
+#: classes/msoSlider.php:24
+msgid "Slide"
+msgstr ""
+
+#: classes/msoSlider.php:25 classes/msoSlider.php:26
+msgid "Add a new Slide"
+msgstr ""
+
+#: classes/msoSlider.php:27
+msgid "Edit a Slide"
+msgstr ""
+
+#: classes/msoSlider.php:28
+msgid "New Slide"
+msgstr ""
+
+#: classes/msoSlider.php:29
+msgid "See the Slide"
+msgstr ""
+
+#: classes/msoSlider.php:30
+msgid "No Slide"
+msgstr ""
+
+#: classes/msoSlider.php:31
+msgid "No Slide in the trash"
+msgstr ""
+
+#: classes/msoSlider.php:54
+msgid "All Sliders"
+msgstr ""
+
+#: classes/msoSlider.php:55
+msgid "Slider"
+msgstr ""
+
+#: classes/msoSlider.php:56 classes/msoSlider.php:98 classes/msoSlider.php:99
+msgid "Add a Slider"
+msgstr ""
+
+#: classes/msoSlider.php:57
+msgid "Add a new Slider"
+msgstr ""
+
+#: classes/msoSlider.php:58
+msgid "Edit a Slider"
+msgstr ""
+
+#: classes/msoSlider.php:59
+msgid "New Slider"
+msgstr ""
+
+#: classes/msoSlider.php:60
+msgid "See the Slider"
+msgstr ""
+
+#: classes/msoSlider.php:61
+msgid "No Slider"
+msgstr ""
+
+#: classes/msoSlider.php:62
+msgid "No Slider in the trash"
+msgstr ""
+
+#: classes/msoSlider.php:142 classes/msoSlider.php:159
+msgid "Title"
+msgstr ""
+
+#: classes/msoSlider.php:143
+msgid "Image"
+msgstr ""
+
+#: classes/msoSlider.php:144
+msgid "Group"
+msgstr ""
+
+#: classes/msoSlider.php:145 classes/msoSlider.php:161
+msgid "Date"
+msgstr ""
+
+#: classes/msoSlider.php:160
+msgid "Number of slides"
+msgstr ""
+
+#: classes/msoSlider.php:280
+msgid "Slide grouping"
+msgstr ""
+
+#: classes/msoSlider.php:288
+msgid "Shortcode generator"
+msgstr ""
+
+#: classes/msoSlider.php:299
+msgid "Select a slide group"
+msgstr ""
+
+#: classes/msoSlider.php:325
+msgid "Generate slider shortcode"
+msgstr ""
+
+#: classes/msoSlider.php:328
+msgid "Slug"
+msgstr ""
+
+#: classes/msoSlider.php:330
+msgid "Width"
+msgstr ""
+
+#: classes/msoSlider.php:335
+msgid "Height"
+msgstr ""
+
+#: classes/msoSlider.php:342
+msgid "Code to copy and paste"
+msgstr ""
+
+#: classes/msoSlider.php:350
+msgid "Copy to clipboard"
+msgstr ""
+
+#: classes/msoSlider.php:351
+msgid "Copied!"
+msgstr ""

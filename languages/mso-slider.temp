@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# ms-only <traduction@ms-only.fr>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-02 13:57+0100\n"
+"PO-Revision-Date: 2021-03-02 14:21+0100\n"
+"Last-Translator: ms-only <traduction@ms-only.fr>\n"
+"Language-Team: ms-only <traduction@ms-only.fr>\n"
+"Language: fra (T)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: classes/msoSlider.php:22
+msgid "Slides"
+msgstr "Slides"
+
+#: classes/msoSlider.php:23
+msgid "Slide"
+msgstr "Slide"
+
+#: classes/msoSlider.php:24
+msgid "Add a Slide"
+msgstr "Ajouter un Slide"
+
+#: classes/msoSlider.php:25
+msgid "Ajouter un nouveau Slide"
+msgstr "Add a new Slide"
+
+#: classes/msoSlider.php:26
+msgid "Editer un Slide"
+msgstr "Edit a Slide"
+
+#: classes/msoSlider.php:27
+msgid "Nouveau Slide"
+msgstr "New Slide"
+
+#: classes/msoSlider.php:28
+msgid "Voir le Slide"
+msgstr "See the Slide"
+
+#: classes/msoSlider.php:29
+msgid "Aucun Slide"
+msgstr "No Slide"
+
+#: classes/msoSlider.php:30
+msgid "Aucun Slide dans la corbeille"
+msgstr "No Slide in the trash"
+
+#: classes/msoSlider.php:81
+msgid "Titre"
+msgstr "Title"
+
+#: classes/msoSlider.php:82
+msgid "Image"
+msgstr "Image"
+
+#: classes/msoSlider.php:83
+msgid "Groupement"
+msgstr "Group"
+
+#: classes/msoSlider.php:84
+msgid "Date"
+msgstr "Dated"
+
+#: classes/msoSlider.php:210
+msgid "Selectionner un groupement de slide"
+msgstr "Select a slide group"
+
+#: classes/msoSlider.php:225
+msgid "Créer un nouveau groupement de slide"
+msgstr "Create a new slide grouping"
+
+#: classes/msoSlider.php:229
+msgid "Générer le shortcode du slider"
+msgstr "Generate slider shortcode"
+
+#: classes/msoSlider.php:231
+msgid "Largeur"
+msgstr "Width"
+
+#: classes/msoSlider.php:236
+msgid "Hauteur"
+msgstr "Height"
+
+#: classes/msoSlider.php:243
+msgid "Code à copier et coller dans votre page"
+msgstr "Code to copy and paste into your page"
+
+#: classes/msoSlider.php:251
+msgid "Copier dans le presse papier"
+msgstr "Copy to clipboard"
+
+#: classes/msoSlider.php:252
+msgid "Copié !"
+msgstr "Copied!"

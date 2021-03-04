@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-03 12:56+0100\n"
+"PO-Revision-Date: 2021-03-03 13:14+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Language: fr\n"
+
+#: classes/msoSlider.php:23
+msgid "All Slides"
+msgstr "Toutes les diapositives"
+
+#: classes/msoSlider.php:24
+msgid "Slide"
+msgstr "Diapositive"
+
+#: classes/msoSlider.php:25 classes/msoSlider.php:26
+msgid "Add a new Slide"
+msgstr "Ajouter une nouvelle diapositive"
+
+#: classes/msoSlider.php:27
+msgid "Edit a Slide"
+msgstr "Modifier une diapositive"
+
+#: classes/msoSlider.php:28
+msgid "New Slide"
+msgstr "Nouvelle diapositive"
+
+#: classes/msoSlider.php:29
+msgid "See the Slide"
+msgstr "Voir la diapositive"
+
+#: classes/msoSlider.php:30
+msgid "No Slide"
+msgstr "Pas de diapositive"
+
+#: classes/msoSlider.php:31
+msgid "No Slide in the trash"
+msgstr "Pas de diapositive à la poubelle"
+
+#: classes/msoSlider.php:54
+msgid "All Sliders"
+msgstr "Tous les diaporamas"
+
+#: classes/msoSlider.php:55
+msgid "Slider"
+msgstr "Diaporama"
+
+#: classes/msoSlider.php:56 classes/msoSlider.php:98 classes/msoSlider.php:99
+msgid "Add a Slider"
+msgstr "Ajouter un diaporama"
+
+#: classes/msoSlider.php:57
+msgid "Add a new Slider"
+msgstr "Ajouter nouveau un diaporama"
+
+#: classes/msoSlider.php:58
+msgid "Edit a Slider"
+msgstr "Modifier un diaporama"
+
+#: classes/msoSlider.php:59
+msgid "New Slider"
+msgstr "Ajouter nouveau un diaporama"
+
+#: classes/msoSlider.php:60
+msgid "See the Slider"
+msgstr "Voir le diaporama"
+
+#: classes/msoSlider.php:61
+msgid "No Slider"
+msgstr "Pas de diaporama"
+
+#: classes/msoSlider.php:62
+msgid "No Slider in the trash"
+msgstr "Pas de diaporama à la poubelle"
+
+#: classes/msoSlider.php:142 classes/msoSlider.php:159
+msgid "Title"
+msgstr "Titre"
+
+#: classes/msoSlider.php:143
+msgid "Image"
+msgstr "Image"
+
+#: classes/msoSlider.php:144
+msgid "Group"
+msgstr "Groupement"
+
+#: classes/msoSlider.php:145 classes/msoSlider.php:161
+msgid "Date"
+msgstr "Date"
+
+#: classes/msoSlider.php:160
+msgid "Number of slides"
+msgstr "Nombre de diapositives"
+
+#: classes/msoSlider.php:280
+msgid "Slide grouping"
+msgstr "Regroupement de diapositives"
+
+#: classes/msoSlider.php:288
+msgid "Shortcode generator"
+msgstr "Générateur de shortcode"
+
+#: classes/msoSlider.php:299
+msgid "Select a slide group"
+msgstr "Sélectionnez un groupe de diapositives"
+
+#: classes/msoSlider.php:325
+msgid "Generate slider shortcode"
+msgstr "Générer le shortcode du slider"
+
+#: classes/msoSlider.php:328
+msgid "Slug"
+msgstr "Slug"
+
+#: classes/msoSlider.php:330
+msgid "Width"
+msgstr "Largeur"
+
+#: classes/msoSlider.php:335
+msgid "Height"
+msgstr "Hauteur"
+
+#: classes/msoSlider.php:342
+msgid "Code to copy and paste"
+msgstr "Code à copier et coller"
+
+#: classes/msoSlider.php:350
+msgid "Copy to clipboard"
+msgstr "Copier dans le presse papier"
+
+#: classes/msoSlider.php:351
+msgid "Copied!"
+msgstr "Copié !"

@@ -35,12 +35,12 @@ if (!class_exists('msoSlider')) {
 
             $args['width'] = get_post_meta($page, '_mso_slider_width', true);
             $args['height'] = get_post_meta($page, '_mso_slider_height', true);
-            $args['animtype'] = get_post_meta($page, '_mso_slider_animate', true);
+            $args['animate'] = get_post_meta($page, '_mso_slider_animate', true);
 
-            $home = get_post_meta($page, '_mso_slider_home', true);
+            $class = get_post_meta($page, '_mso_slider_class', true);
             $classname = '';
 
-            if ($home != '') $classname = ' class="' . $home . '"';
+            if ($class != '') $classname = ' class="' . $class . '"';
 
             add_action('wp_footer', function () use ($args) {
                 $this->mso_slider_script($args);
@@ -94,7 +94,7 @@ if (!class_exists('msoSlider')) {
             <script type="text/javascript">
                 (function ($) {
                         $('#<?php echo $slider['slider']; ?>').bjqs({
-                            animtype: '<?php echo $slider['animtype']; ?>',
+                            animtype: '<?php echo $slider['animate']; ?>',
                             height: <?php echo $slider['height']; ?>,
                             width: <?php echo $slider['width']; ?>,
                             responsive: true,

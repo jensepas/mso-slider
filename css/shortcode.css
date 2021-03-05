@@ -1,22 +1,4 @@
 /* Just to play with animations */
-.copiedtext {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-1em);
-    color: #000;
-    transition: all .500s;
-}
-
-.copied .copiedtext {
-    opacity: 1;
-    transform: translateY(-2em);
-    font-weight: bold;
-}
-
-button {
-    position: relative;
-}
+.copiedtext{position:absolute;left:0;top:0;right:0;text-align:center;opacity:0;transform:translateY(-1em);color:#000;transition:all .5s}
+.copied .copiedtext{opacity:1;transform:translateY(-2em);font-weight:700}
+button{position:relative}

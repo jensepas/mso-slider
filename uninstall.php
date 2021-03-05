@@ -6,7 +6,6 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 
 function mso_slider_delete_plugin()
 {
-
     $post_types = array('mso_slider', 'mso_slide');
     foreach ($post_types as $post_type) {
         $posts = get_posts(

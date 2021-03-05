@@ -11,7 +11,6 @@ define('MSO_SLIDER_BASENAME', plugin_basename(__FILE__));
 require plugin_dir_path(__FILE__) . 'classes/msoSlider.php';
 $multilingual = new msoSlider();
 
-
 if (is_admin()) {
     require plugin_dir_path(__FILE__) . 'classes/msoSliderAdmin.php';
     $multilingual = new msoSliderAdmin();

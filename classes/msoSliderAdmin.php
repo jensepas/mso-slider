@@ -99,16 +99,11 @@ if (!class_exists('msoSliderAdmin')) {
         public function mso_slider_add_slider_select()
         {
             $posts = ($this->get_post_values('mso_slider'));
-
-            echo '&nbsp;<select id="sc_select"><option value="">' . __('Select a slide group', 'mso-slider') . '</option>';
-
+            echo '<select id="sc_select"><option value="">' . __('Select a slide group', 'mso-slider') . '</option>';
             foreach ($posts as $key => $val) {
-                $shortcodes_list .= '<option value="' . $val->post_name . '">' . $val->post_title . '</option>';
+                echo '<option value="' . $val->post_name . '">' . $val->post_title . '</option>';
             }
-
-            echo $shortcodes_list;
             echo '</select>';
-
         }
 
         /**
@@ -135,7 +130,6 @@ if (!class_exists('msoSliderAdmin')) {
             if (!is_admin() || !$query->is_main_query()) {
                 return;
             }
-
             if ('_mso_slider' === $query->get('orderby')) {
                 $query->set('orderby', 'meta_value');
                 $query->set('meta_key', '_mso_slider');
@@ -163,7 +157,7 @@ if (!class_exists('msoSliderAdmin')) {
                 'cb' => $columns['cb'],
                 'title' => __('Title', 'mso-slider'),
                 'thumbnail' => __('Image', 'mso-slider'),
-                '_mso_slider' => __('Group', 'mso-slider'),
+                '_mso_slider' => __('Slider', 'mso-slider'),
                 'date' => __('Date', 'mso-slider'),
             );
 
@@ -201,12 +195,11 @@ if (!class_exists('msoSliderAdmin')) {
                 $post_name = get_post_meta($post->ID, '_mso_slider', true);
                 $post = $wpdb->get_var($wpdb->prepare("SELECT post_title FROM $wpdb->posts WHERE post_name= %s", $post_name));
                 if ($post) {
-                    echo get_post($post)->post_title;
+                    echo $post;
                 }
             }
             if ($column === '_mso_nb_slider') {
                 $post_slug = get_post_field('post_name', $post->ID);
-
                 $args = array(
                     'post_type' => 'mso_slide',
                     'post_status' => 'publish',
@@ -226,11 +219,12 @@ if (!class_exists('msoSliderAdmin')) {
                 echo '[mso_slider slider="' . $post_slug . '"]';
             }
             if ($column === '_mso_slider_size') {
-                $width = get_post_meta($post->ID, '_mso_slider_width', true);
-                $height = get_post_meta($post->ID, '_mso_slider_height', true);
-                $animate = get_post_meta($post->ID, '_mso_slider_animate', true);
-                $class = get_post_meta($post->ID, '_mso_slider_class', true);
-
+                $post_metas = get_post_meta($post->ID);
+                $post_metas = array_combine(array_keys($post_metas), array_column($post_metas, '0'));
+                $width = $post_metas['_mso_slider_width'];
+                $height = $post_metas['_mso_slider_height'];
+                $animate = $post_metas['_mso_slider_animate'];
+                $class = $post_metas['_mso_slider_class'];
                 echo $animate . ' (' . $width . 'X' . $height . ') ';
                 if ($class !== '') echo 'class="' . $class . '"';
             }
@@ -250,7 +244,6 @@ if (!class_exists('msoSliderAdmin')) {
         public function mso_slider_metaboxes_slider()
         {
             $post_slug = get_post_field('post_name', get_post());
-
             if ($post_slug) {
                 add_meta_box('msslider', __('Shortcode generator', 'mso-slider'), array(&$this, 'mso_slider_metabox_slider'), 'mso_slider', 'normal', 'high');
             }
@@ -288,12 +281,12 @@ if (!class_exists('msoSliderAdmin')) {
         public function mso_slider_metabox_slider($object)
         {
             $post_slug = get_post_field('post_name', get_post());
-
-            $mso_slider_slider_width = get_post_meta(get_post()->ID, '_mso_slider_width', true);
-            $mso_slider_slider_height = get_post_meta(get_post()->ID, '_mso_slider_height', true);
-            $mso_slider_slider_animate = get_post_meta(get_post()->ID, '_mso_slider_animate', true);
-            $mso_slider_slider_class = get_post_meta(get_post()->ID, '_mso_slider_class', true);
-
+            $post_metas = get_post_meta(get_post()->ID);
+            $post_metas = array_combine(array_keys($post_metas), array_column($post_metas, '0'));
+            $mso_slider_slider_width = $post_metas['_mso_slider_width'];
+            $mso_slider_slider_height = $post_metas['_mso_slider_height'];
+            $mso_slider_slider_animate = $post_metas['_mso_slider_animate'];
+            $mso_slider_slider_class = $post_metas['_mso_slider_class'];
             ?>
             <div><h4><?php _e('Generate slider shortcode', 'mso-slider'); ?></h4></div>
 
@@ -347,7 +340,6 @@ if (!class_exists('msoSliderAdmin')) {
             if (!current_user_can($type->cap->edit_post)) {
                 return $post_id;
             }
-
             if (!empty($_POST['mso_slider_slider_new'])) {
                 $_POST['mso_slider_slider'] = $_POST['mso_slider_slider_new'];
             }
@@ -356,7 +348,6 @@ if (!class_exists('msoSliderAdmin')) {
 
                 return $post_id;
             }
-
             $post_slug = get_post_field('post_name', $post_id);
             $new_post_slug = $_POST['new_post_name'];
             if (isset($new_post_slug)) {

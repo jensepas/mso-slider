@@ -24,28 +24,21 @@ if (!class_exists('msoSlider')) {
         public function mso_slider_show($args, $limit = 10)
         {
             global $wpdb;
-
             wp_enqueue_style('bjqs', plugins_url() . '/' . dirname(MSO_SLIDER_BASENAME) . '/css/bjqs.css', false, '1.1', 'all');
-
             wp_enqueue_script('bjqs', plugins_url() . '/' . dirname(MSO_SLIDER_BASENAME) . '/js/bjqs-1.3.js', array('jquery'), '1.1', true);
-
             $slider = $args['slider'];
-
             $page = $wpdb->get_var($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type= %s AND post_status = 'publish'", $slider, 'mso_slider'));
-
-            $args['width'] = get_post_meta($page, '_mso_slider_width', true);
-            $args['height'] = get_post_meta($page, '_mso_slider_height', true);
-            $args['animate'] = get_post_meta($page, '_mso_slider_animate', true);
-
-            $class = get_post_meta($page, '_mso_slider_class', true);
+            $post_metas = get_post_meta($page);
+            $post_metas = array_combine(array_keys($post_metas), array_column($post_metas, '0'));
+            $args['width'] = $post_metas['_mso_slider_width'];
+            $args['height'] = $post_metas['_mso_slider_height'];
+            $args['animate'] = $post_metas['_mso_slider_animate'];
+            $class = $post_metas['_mso_slider_class'];
             $classname = '';
-
             if ($class != '') $classname = ' class="' . $class . '"';
-
             add_action('wp_footer', function () use ($args) {
                 $this->mso_slider_script($args);
             }, 30, 1);
-
             $args = array(
                 'post_type' => 'mso_slide',
                 'post_status' => 'publish',
@@ -61,7 +54,6 @@ if (!class_exists('msoSlider')) {
                     'date' => 'ASC',
                 ),
             );
-
             $slides = new WP_query($args);
             $out = '<div id="' . $slider . '"' . $classname . '>' . "\n";
             $out .= '<ul class="bjqs">' . "\n";
